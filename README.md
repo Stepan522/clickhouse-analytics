@@ -12,6 +12,7 @@
 ## Stack
 
 - ClickHouse
+- Postgres
 - SQL
 - Python
 - AppMetrica
