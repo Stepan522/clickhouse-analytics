@@ -1,0 +1,50 @@
+with CPA as (--Получаю источник - Scaleo.
+	select 
+		toDate(event_time) as date,
+		'app' as traffic_type, 
+		'PAID.CPA' as chanel, 
+		tracker as utm_campaign,
+		case 
+			when (lower(tracker) like '%scaleo%' or parameter like '%source=scaleo%') and flag = '' then 'scaleo'
+			when (lower(tracker) like '%scaleo%' or parameter like '%source=scaleo%') and flag != '' then 'scaleo_w2a'
+			when (lower(tracker) like '%perfluence%' or parameter like '%source=perfluence%') and flag = '' then 'perfluence'
+			when (lower(tracker) like '%perfluence%' or parameter like '%source=perfluence%') and flag != '' then 'perfluence_w2a'
+			when partner like '%Unknown (source: Advertisement Engine)%' then 'scaleo_w2a'
+			when (parameter like '%source=admitad%') and flag = '' then 'admitad'
+			when (parameter like '%source=admitad%') and flag != '' then 'admitad_w2a'
+			when (parameter like '%source=advcake%') and flag = '' then 'advcake'
+			when (parameter like '%source=advcake%') and flag != '' then 'advcake_w2a'
+			when (parameter like '%source=cityads%') and flag = '' then 'cityads'
+			when (parameter like '%source=cityads%') and flag != '' then 'cityads_w2a'
+		end as utm_source,
+		'' as campaign_id, 
+		case 
+			when os = 'ios' then 'ios'
+			when os = 'android' then 'aos'
+		end as os,
+		'ua' as campaign,
+		sum(toInt32(0)) as impressions, 
+		sum(toInt32(0)) as clicks, 
+		sum(installs) as installs, 
+		sum(purchases) as purchases,
+		sum(revenue) as revenue, 
+		sum(completed_purchases) as completed_purchases, 
+		sum(completed_revenue) as completed_revenue,
+		sum(sum_vozvrata) as sum_vozvrata, 
+		sum(aty_sku_zakaza) as aty_sku_zakaza, 
+		sum(aty_sku_oplaty) as aty_sku_oplaty, 
+		sum(customer_is_new) as customer_is_new,
+		sum(gmv_new) as gmv_new, 
+		sum(revenue_ecomm_new) as revenue_ecomm_new, 
+		sum(purchases_new) as purchases_new,
+		toInt32(count(distinct appmetrica_device_id)) as users
+	from dashboard.enriched_metrika_app_auto
+	where (
+		(partner like '%Scaleio%' or partner like '%Perfluence%')
+		or (partner like '%Unknown (source: Advertisement Engine)%' and (parameter like '%scaleo%' and parameter like '%=cpa%'))
+		or (parameter like '%source=scaleo%' or parameter like '%source=perfluence%' or parameter like '%source=admitad%'
+			or parameter like '%source=advcake%' or parameter like '%source=cityads%')
+	) 
+	and ((day_diff <= 30 and flag != 'w2a') or flag = 'w2a')
+	group by 1,2,3,4,5,6,7,8)
+select * from CPA
