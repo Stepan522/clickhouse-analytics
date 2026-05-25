@@ -66,7 +66,7 @@ ELSEIF [scaleru]="Квартал" THEN DATETRUNC([date],"quarter")
 ELSEIF [scaleru]="Месяц" THEN DATETRUNC([date],"month")
 ELSEIF [scaleru]="Неделя" THEN DATETRUNC([date],"week")
 ELSEIF [scaleru]="День" THEN DATETRUNC([date],"day")
-END
+END```
 
 ## Динамический выбор показателя:
 
