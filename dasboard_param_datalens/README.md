@@ -16,12 +16,12 @@ https://datalens.yandex/ixyoh7x60mus2
 
 ### Дата параметром:
 
--IF [scaleru]="Год" THEN DATETRUNC([date],"year")
--ELSEIF [scaleru]="Квартал" THEN DATETRUNC([date],"quarter")
--ELSEIF [scaleru]="Месяц" THEN DATETRUNC([date],"month")
--ELSEIF [scaleru]="Неделя" THEN DATETRUNC([date],"week")
--ELSEIF [scaleru]="День" THEN DATETRUNC([date],"day")
--END
+IF [scaleru]="Год" THEN DATETRUNC([date],"year")
+ELSEIF [scaleru]="Квартал" THEN DATETRUNC([date],"quarter")
+ELSEIF [scaleru]="Месяц" THEN DATETRUNC([date],"month")
+ELSEIF [scaleru]="Неделя" THEN DATETRUNC([date],"week")
+ELSEIF [scaleru]="День" THEN DATETRUNC([date],"day")
+END
 
 ### Показатель:
 
