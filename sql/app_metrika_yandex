@@ -237,3 +237,4 @@ WITH
 	)
 SELECT * FROM SEPARAT_DATA
 where toDate(event_time) between today()-8 and today()-1
+```
