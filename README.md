@@ -41,6 +41,8 @@
 
 [Open Case](./dasboard_param_datalens/README.md)
 
+---
+
 ### 4. Dashboard Advanced Chart
 Дашборд с advanced chart.
 
