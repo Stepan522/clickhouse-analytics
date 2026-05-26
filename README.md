@@ -40,3 +40,8 @@
 Дашборд с чартами построенными на параметрах.
 
 [Open Case](./dasboard_param_datalens/README.md)
+
+### 4. Dashboard Advanced Chart
+Дашборд с advanced chart.
+
+[Open Case](./dashboard_advanced_chart/README.md)
