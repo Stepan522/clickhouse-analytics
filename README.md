@@ -33,3 +33,10 @@
 Сегментация CPA-трафика на основе маркетинговой разметки.
 
 [Open Case](./sql_CPA/README.md)
+
+---
+
+### 3. Parameters Dashboard
+Дашборд с чартами построенными на параметрах.
+
+[Open Case](./dasboard_param_datalens/README.md)
