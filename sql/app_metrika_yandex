@@ -1,5 +1,3 @@
-
-```sql
 WITH 
 	CRM AS ( -- Шаг 1. Достаю данные CRM только те, которые совпадают по id с Метрикой.
 		SELECT * FROM `dashboard`.`view_CRM`
@@ -238,5 +236,3 @@ WITH
 	)
 SELECT * FROM SEPARAT_DATA
 where toDate(event_time) between today()-8 and today()-1
-
-```
