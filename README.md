@@ -47,3 +47,10 @@
 Дашборд с advanced chart.
 
 [Open Case](./dashboard_advanced_chart/README.md)
+
+---
+
+### 5. Dashboard Yandex Map
+Дашборд для выездного мастера.
+
+[Open Case](./dashboard_map/README.md)
