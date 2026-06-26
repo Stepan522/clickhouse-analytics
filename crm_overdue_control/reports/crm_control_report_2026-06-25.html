@@ -1,0 +1,293 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Контроль заявок и просрочек</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px;
+            background: #f5f7fb;
+            color: #111827;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        .header {
+            margin-bottom: 24px;
+        }
+        .subtitle {
+            color: #667085;
+            font-size: 16px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+        }
+        .label {
+            color: #94a3b8;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+        .value {
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+        .danger { color: #7c3aed; }
+        .warning { color: #ef4444; }
+        .section {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 24px;
+            margin-top: 20px;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 14px;
+            font-size: 14px;
+        }
+        th, td {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            color: #64748b;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+        ul { margin-top: 10px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Контроль заявок и просрочек за 25.06.2026</h1>
+        <div class="subtitle">Автоматический мониторинг CRM: новые заявки, просроченные действия, заявки без ответственных и зависшие статусы.</div>
+    </div>
+
+    <div class="grid">
+        <div class="card"><div class="label">Открытых заявок</div><div class="value">18</div></div>
+        <div class="card"><div class="label">Новых сегодня</div><div class="value">7</div></div>
+        <div class="card"><div class="label">Просрочено действий</div><div class="value warning">16</div></div>
+        <div class="card"><div class="label">Сумма в риске</div><div class="value danger">2 413 000 ₽</div></div>
+    </div>
+
+    <div class="section">
+        <h2>Что требует внимания</h2>
+        <ul><li>Высокоприоритетных просрочек: 7</li><li>Заявок без ответственного: 3</li><li>Зависших заявок без движения: 5</li><li>Сумма в зоне риска: 2 413 000 ₽</li></ul>
+    </div>
+
+    <div class="section">
+        <h2>Проблемные заявки</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>Клиент</th><th>Ответственный</th><th>Статус</th><th>Приоритет</th><th>Сумма</th><th>Следующее действие</th><th>Проблема</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td>1009</td>
+            <td>ООО Север</td>
+            <td>Иван Петров</td>
+            <td>Просрочена</td>
+            <td>Высокий</td>
+            <td>410 000 ₽</td>
+            <td>20.06.2026 12:00</td>
+            <td>просрочено следующее действие; просрочен дедлайн закрытия; статус давно не менялся; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1004</td>
+            <td>ООО Альфа</td>
+            <td>Иван Петров</td>
+            <td>Согласование</td>
+            <td>Высокий</td>
+            <td>270 000 ₽</td>
+            <td>22.06.2026 15:00</td>
+            <td>просрочено следующее действие; просрочен дедлайн закрытия; статус давно не менялся; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1001</td>
+            <td>ООО Вектор</td>
+            <td>Иван Петров</td>
+            <td>В работе</td>
+            <td>Высокий</td>
+            <td>185 000 ₽</td>
+            <td>21.06.2026 12:00</td>
+            <td>просрочено следующее действие; просрочен дедлайн закрытия; статус давно не менялся; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1012</td>
+            <td>ООО Омега</td>
+            <td>Анна Кузнецова</td>
+            <td>Согласование</td>
+            <td>Средний</td>
+            <td>158 000 ₽</td>
+            <td>23.06.2026 11:00</td>
+            <td>просрочено следующее действие; просрочен дедлайн закрытия; статус давно не менялся</td>
+        </tr>
+        
+        <tr>
+            <td>1007</td>
+            <td>ЗАО Сигма</td>
+            <td>Мария Орлова</td>
+            <td>В работе</td>
+            <td>Высокий</td>
+            <td>145 000 ₽</td>
+            <td>25.06.2026 09:00</td>
+            <td>просрочено следующее действие; просрочен дедлайн закрытия; статус давно не менялся; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1016</td>
+            <td>ООО Комфорт</td>
+            <td>Не назначен</td>
+            <td>В работе</td>
+            <td>Высокий</td>
+            <td>236 000 ₽</td>
+            <td>24.06.2026 10:00</td>
+            <td>просрочено следующее действие; нет ответственного; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1003</td>
+            <td>ООО Ритейл+</td>
+            <td>Анна Кузнецова</td>
+            <td>В работе</td>
+            <td>Высокий</td>
+            <td>320 000 ₽</td>
+            <td>25.06.2026 12:30</td>
+            <td>просрочено следующее действие; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1013</td>
+            <td>ООО Восток</td>
+            <td>Иван Петров</td>
+            <td>В работе</td>
+            <td>Высокий</td>
+            <td>210 000 ₽</td>
+            <td>25.06.2026 11:00</td>
+            <td>просрочено следующее действие; высокий приоритет</td>
+        </tr>
+        
+        <tr>
+            <td>1008</td>
+            <td>ООО Дельта</td>
+            <td>Не назначен</td>
+            <td>Новая</td>
+            <td>Средний</td>
+            <td>76 000 ₽</td>
+            <td>25.06.2026 14:00</td>
+            <td>просрочено следующее действие; нет ответственного</td>
+        </tr>
+        
+        <tr>
+            <td>1002</td>
+            <td>ИП Смирнов</td>
+            <td>Не назначен</td>
+            <td>Новая</td>
+            <td>Средний</td>
+            <td>42 000 ₽</td>
+            <td>25.06.2026 10:00</td>
+            <td>просрочено следующее действие; нет ответственного</td>
+        </tr>
+        
+        <tr>
+            <td>1006</td>
+            <td>ООО Бета</td>
+            <td>Анна Кузнецова</td>
+            <td>Ожидает клиента</td>
+            <td>Средний</td>
+            <td>93 000 ₽</td>
+            <td>24.06.2026 17:00</td>
+            <td>просрочено следующее действие</td>
+        </tr>
+        
+        <tr>
+            <td>1015</td>
+            <td>ООО Юг</td>
+            <td>Иван Петров</td>
+            <td>В работе</td>
+            <td>Средний</td>
+            <td>84 000 ₽</td>
+            <td>25.06.2026 13:00</td>
+            <td>просрочено следующее действие</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Нагрузка и просрочки по менеджерам</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Менеджер</th><th>Открыто</th><th>Просрочено действий</th><th>Просрочено закрытий</th><th>Зависло</th><th>Сумма открытых</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td>Иван Петров</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1 347 000 ₽</td>
+        </tr>
+        
+        <tr>
+            <td>Анна Кузнецова</td>
+            <td>5</td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td>707 000 ₽</td>
+        </tr>
+        
+        <tr>
+            <td>Мария Орлова</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td>262 000 ₽</td>
+        </tr>
+        
+        <tr>
+            <td>Не назначен</td>
+            <td>3</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>354 000 ₽</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

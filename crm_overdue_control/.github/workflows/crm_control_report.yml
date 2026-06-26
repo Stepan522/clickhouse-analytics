@@ -1,0 +1,38 @@
+name: CRM Overdue Control Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Каждый день в 06:00 UTC. Время можно изменить под свой часовой пояс.
+    - cron: "0 6 * * *"
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r crm_overdue_control/requirements.txt
+
+      - name: Generate CRM control report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          cd crm_overdue_control
+          python src/crm_control_report.py \
+            --data data/crm_requests.csv \
+            --output-dir reports
