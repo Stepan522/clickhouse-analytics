@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Отчет по рекламе</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f4f7fb;
+            color: #0f172a;
+            font-family: Inter, Arial, sans-serif;
+        }
+        .wrap {
+            max-width: 1180px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+        .header {
+            background: #0f766e;
+            color: #fff;
+            border-radius: 24px;
+            padding: 28px 32px;
+            margin-bottom: 20px;
+        }
+        .date { color: #ccfbf1; font-size: 16px; margin-top: 8px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 14px;
+            margin: 20px 0;
+        }
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+        }
+        .card-title { color: #64748b; font-size: 13px; }
+        .card-value { font-size: 24px; font-weight: 800; margin: 8px 0; }
+        .card-delta { font-size: 13px; }
+        .good { color: #059669; }
+        .bad { color: #dc2626; }
+        .section {
+            background: #fff;
+            border-radius: 18px;
+            padding: 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+        }
+        .danger { border: 1px solid #fecaca; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px 10px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+        th { color: #64748b; font-weight: 600; }
+        ul { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <h1>Отчет по рекламе</h1>
+        <div class="date">Дата отчета: 25.06.2026</div>
+    </div>
+
+    <div class="grid">
+        
+        <div class="card">
+            <div class="card-title">Расход</div>
+            <div class="card-value">299 500 ₽</div>
+            <div class="card-delta bad">+18.4% к прошлому дню</div>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-title">Заявки</div>
+            <div class="card-value">521</div>
+            <div class="card-delta bad">-5.4% к прошлому дню</div>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-title">CPL</div>
+            <div class="card-value">575 ₽</div>
+            <div class="card-delta bad">+25.2% к прошлому дню</div>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-title">CPA</div>
+            <div class="card-value">4 160 ₽</div>
+            <div class="card-delta bad">+33.2% к прошлому дню</div>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-title">ROAS</div>
+            <div class="card-value">4.33x</div>
+            <div class="card-delta bad">-24.9% к прошлому дню</div>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-title">Выручка</div>
+            <div class="card-value">1 296 000 ₽</div>
+            <div class="card-delta bad">-11.1% к прошлому дню</div>
+        </div>
+        
+    </div>
+
+    <div class="section">
+        <h2>Эффективность по рекламным источникам</h2>
+        <table>
+            <thead>
+                <tr><th>Источник</th><th>Расход</th><th>Заявки</th><th>CPL</th><th>CPA</th><th>ROAS</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Yandex Direct</td>
+                <td>123 900 ₽</td>
+                <td>270</td>
+                <td>459 ₽</td>
+                <td>2 581 ₽</td>
+                <td>6.97x</td>
+            </tr>
+            
+
+            <tr>
+                <td>VK Ads</td>
+                <td>87 800 ₽</td>
+                <td>132</td>
+                <td>665 ₽</td>
+                <td>5 488 ₽</td>
+                <td>3.28x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Telegram Ads</td>
+                <td>55 200 ₽</td>
+                <td>85</td>
+                <td>649 ₽</td>
+                <td>7 886 ₽</td>
+                <td>2.28x</td>
+            </tr>
+            
+
+            <tr>
+                <td>MyTarget</td>
+                <td>32 600 ₽</td>
+                <td>34</td>
+                <td>959 ₽</td>
+                <td>32 600 ₽</td>
+                <td>0.55x</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Кампании по расходу</h2>
+        <table>
+            <thead>
+                <tr><th>Источник</th><th>Кампания</th><th>Расход</th><th>Заявки</th><th>CPL</th><th>CPA</th><th>ROAS</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Yandex Direct</td>
+                <td>Non Brand Search</td>
+                <td>71 100 ₽</td>
+                <td>96</td>
+                <td>741 ₽</td>
+                <td>4 740 ₽</td>
+                <td>3.80x</td>
+            </tr>
+            
+
+            <tr>
+                <td>VK Ads</td>
+                <td>Lookalike Leads</td>
+                <td>59 600 ₽</td>
+                <td>58</td>
+                <td>1 028 ₽</td>
+                <td>19 867 ₽</td>
+                <td>0.91x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Telegram Ads</td>
+                <td>Channel Promo</td>
+                <td>35 100 ₽</td>
+                <td>36</td>
+                <td>975 ₽</td>
+                <td>8 775 ₽</td>
+                <td>2.05x</td>
+            </tr>
+            
+
+            <tr>
+                <td>MyTarget</td>
+                <td>Interest Campaign</td>
+                <td>32 600 ₽</td>
+                <td>34</td>
+                <td>959 ₽</td>
+                <td>32 600 ₽</td>
+                <td>0.55x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Yandex Direct</td>
+                <td>Brand Search</td>
+                <td>31 200 ₽</td>
+                <td>151</td>
+                <td>207 ₽</td>
+                <td>1 006 ₽</td>
+                <td>17.88x</td>
+            </tr>
+            
+
+            <tr>
+                <td>VK Ads</td>
+                <td>Retargeting</td>
+                <td>28 200 ₽</td>
+                <td>74</td>
+                <td>381 ₽</td>
+                <td>2 169 ₽</td>
+                <td>8.30x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Yandex Direct</td>
+                <td>Competitors Search</td>
+                <td>21 600 ₽</td>
+                <td>23</td>
+                <td>939 ₽</td>
+                <td>10 800 ₽</td>
+                <td>1.67x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Telegram Ads</td>
+                <td>Lead Magnet</td>
+                <td>20 100 ₽</td>
+                <td>49</td>
+                <td>410 ₽</td>
+                <td>6 700 ₽</td>
+                <td>2.69x</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+        <div class="section danger">
+            <h2>Кампании для проверки</h2>
+            <table>
+                <thead>
+                    <tr><th>Источник</th><th>Кампания</th><th>Расход</th><th>Заявки</th><th>CPL</th><th>CPA</th><th>ROAS</th></tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>Yandex Direct</td>
+                <td>Non Brand Search</td>
+                <td>71 100 ₽</td>
+                <td>96</td>
+                <td>741 ₽</td>
+                <td>4 740 ₽</td>
+                <td>3.80x</td>
+            </tr>
+            
+
+            <tr>
+                <td>VK Ads</td>
+                <td>Lookalike Leads</td>
+                <td>59 600 ₽</td>
+                <td>58</td>
+                <td>1 028 ₽</td>
+                <td>19 867 ₽</td>
+                <td>0.91x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Telegram Ads</td>
+                <td>Channel Promo</td>
+                <td>35 100 ₽</td>
+                <td>36</td>
+                <td>975 ₽</td>
+                <td>8 775 ₽</td>
+                <td>2.05x</td>
+            </tr>
+            
+
+            <tr>
+                <td>MyTarget</td>
+                <td>Interest Campaign</td>
+                <td>32 600 ₽</td>
+                <td>34</td>
+                <td>959 ₽</td>
+                <td>32 600 ₽</td>
+                <td>0.55x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Yandex Direct</td>
+                <td>Competitors Search</td>
+                <td>21 600 ₽</td>
+                <td>23</td>
+                <td>939 ₽</td>
+                <td>10 800 ₽</td>
+                <td>1.67x</td>
+            </tr>
+            
+
+            <tr>
+                <td>Telegram Ads</td>
+                <td>Lead Magnet</td>
+                <td>20 100 ₽</td>
+                <td>49</td>
+                <td>410 ₽</td>
+                <td>6 700 ₽</td>
+                <td>2.69x</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        
+
+    <div class="section">
+        <h2>Отклонения</h2>
+        <ul><li>CPL вырос больше чем на 20%</li><li>CPA вырос больше чем на 20%</li><li>ROAS просел больше чем на 20%</li><li>Найдено кампаний с риском слива бюджета: 6</li></ul>
+    </div>
+</div>
+</body>
+</html>
