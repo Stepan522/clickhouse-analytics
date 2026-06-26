@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+reports/*.html
+reports/*.png
+!assets/report_preview.png
