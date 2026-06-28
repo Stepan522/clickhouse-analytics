@@ -1,0 +1,27 @@
+field,description,type
+order_date,Дата заказа,date
+order_month,Месяц заказа для группировки в BI,string
+order_week,ISO-неделя заказа,string
+order_id,Идентификатор заказа,string
+customer_id,Идентификатор клиента,string
+customer_name,Название/имя клиента,string
+city,Город клиента,string
+customer_type,Тип клиента: B2B или B2C,string
+sales_channel,Канал продажи,string
+payment_method,Способ оплаты,string
+order_status,Статус заказа,string
+product_id,Идентификатор товара/услуги,string
+product_name,Товар или услуга,string
+category,Категория товара/услуги,string
+quantity,Количество в строке заказа,integer
+gross_revenue,Выручка до скидки,number
+discount_amount,Сумма скидки,number
+net_revenue,Выручка после скидки,number
+cost,Себестоимость,number
+margin,Маржа,number
+margin_pct,Маржинальность,number
+is_paid,Флаг оплаченного/учитываемого заказа,integer
+order_sequence,Порядковый номер покупки клиента,integer
+is_repeat_purchase,Флаг повторной покупки,integer
+order_total,Сумма заказа после скидки,number
+avg_check,Средний чек заказа,number

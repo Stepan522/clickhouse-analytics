@@ -1,0 +1,23 @@
+name: Build sales dashboard dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  build-dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Rebuild dataset
+        run: |
+          python src/create_demo_data.py --output-dir data/raw
+          python src/build_dataset.py --raw-dir data/raw --output-dir data/processed
+          python src/make_preview.py --processed-dir data/processed --output assets/report_preview.png
+          python src/make_dataset_sample_image.py --input data/processed/dashboard_sales_dataset.csv --output assets/dataset_sample.png
