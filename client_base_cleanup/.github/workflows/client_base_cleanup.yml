@@ -1,0 +1,26 @@
+name: client-base-cleanup
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r client_base_cleanup/requirements.txt
+
+      - name: Run cleanup
+        run: |
+          cd client_base_cleanup
+          python src/clean_client_base.py --input data/raw/clients_dirty.csv --output-dir data/processed
