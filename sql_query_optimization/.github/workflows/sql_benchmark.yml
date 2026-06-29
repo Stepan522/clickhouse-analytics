@@ -1,0 +1,24 @@
+name: sql-query-benchmark
+
+on:
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r sql_query_optimization/requirements.txt
+
+      - name: Run benchmark
+        run: |
+          cd sql_query_optimization
+          python src/benchmark_sql.py

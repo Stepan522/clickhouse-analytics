@@ -1,0 +1,3 @@
+version,query_time_sec,rows_read_mln,joins_count,subqueries_count
+before,38.4,12.4,7,9
+after,4.8,1.9,3,3
