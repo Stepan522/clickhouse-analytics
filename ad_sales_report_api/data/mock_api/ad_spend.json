@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2026-06-19",
+    "channel": "Yandex Direct",
+    "campaign": "search_reports",
+    "impressions": 184200,
+    "clicks": 4256,
+    "cost": 71100
+  },
+  {
+    "date": "2026-06-19",
+    "channel": "VK Ads",
+    "campaign": "lookalike_b2b",
+    "impressions": 156300,
+    "clicks": 3742,
+    "cost": 59600
+  },
+  {
+    "date": "2026-06-20",
+    "channel": "Yandex Direct",
+    "campaign": "search_reports",
+    "impressions": 190500,
+    "clicks": 4388,
+    "cost": 73500
+  },
+  {
+    "date": "2026-06-20",
+    "channel": "Telegram Ads",
+    "campaign": "analytics_post",
+    "impressions": 118900,
+    "clicks": 2415,
+    "cost": 35100
+  },
+  {
+    "date": "2026-06-21",
+    "channel": "VK Ads",
+    "campaign": "lookalike_b2b",
+    "impressions": 162000,
+    "clicks": 3880,
+    "cost": 61200
+  },
+  {
+    "date": "2026-06-21",
+    "channel": "Yandex Direct",
+    "campaign": "brand_search",
+    "impressions": 74600,
+    "clicks": 1421,
+    "cost": 21600
+  },
+  {
+    "date": "2026-06-22",
+    "channel": "MyTarget",
+    "campaign": "retargeting",
+    "impressions": 91200,
+    "clicks": 2018,
+    "cost": 32600
+  },
+  {
+    "date": "2026-06-22",
+    "channel": "Telegram Ads",
+    "campaign": "analytics_post",
+    "impressions": 120400,
+    "clicks": 2470,
+    "cost": 36100
+  },
+  {
+    "date": "2026-06-23",
+    "channel": "Yandex Direct",
+    "campaign": "search_reports",
+    "impressions": 201100,
+    "clicks": 4610,
+    "cost": 78200
+  },
+  {
+    "date": "2026-06-23",
+    "channel": "VK Ads",
+    "campaign": "lookalike_b2b",
+    "impressions": 170800,
+    "clicks": 4020,
+    "cost": 64100
+  },
+  {
+    "date": "2026-06-24",
+    "channel": "Yandex Direct",
+    "campaign": "brand_search",
+    "impressions": 80500,
+    "clicks": 1530,
+    "cost": 23100
+  },
+  {
+    "date": "2026-06-24",
+    "channel": "MyTarget",
+    "campaign": "retargeting",
+    "impressions": 96000,
+    "clicks": 2102,
+    "cost": 34200
+  },
+  {
+    "date": "2026-06-25",
+    "channel": "Yandex Direct",
+    "campaign": "search_reports",
+    "impressions": 210400,
+    "clicks": 4890,
+    "cost": 82900
+  },
+  {
+    "date": "2026-06-25",
+    "channel": "Telegram Ads",
+    "campaign": "analytics_post",
+    "impressions": 126200,
+    "clicks": 2608,
+    "cost": 38200
+  }
+]

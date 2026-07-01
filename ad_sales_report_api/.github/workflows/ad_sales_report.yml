@@ -1,0 +1,22 @@
+name: ad-sales-report-api
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r ad_sales_report_api/requirements.txt
+      - name: Build report
+        run: |
+          cd ad_sales_report_api
+          python src/pipeline.py --date-from 2026-06-19 --date-to 2026-06-25

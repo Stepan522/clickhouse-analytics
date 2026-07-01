@@ -1,0 +1,50 @@
+[
+  {
+    "order_id": "O-9001",
+    "paid_at": "2026-06-19 15:30:00",
+    "revenue": 145000,
+    "gross_margin": 0.34
+  },
+  {
+    "order_id": "O-9002",
+    "paid_at": "2026-06-20 16:45:00",
+    "revenue": 98000,
+    "gross_margin": 0.31
+  },
+  {
+    "order_id": "O-9003",
+    "paid_at": "2026-06-21 12:10:00",
+    "revenue": 132000,
+    "gross_margin": 0.36
+  },
+  {
+    "order_id": "O-9004",
+    "paid_at": "2026-06-22 18:15:00",
+    "revenue": 86000,
+    "gross_margin": 0.29
+  },
+  {
+    "order_id": "O-9005",
+    "paid_at": "2026-06-23 14:40:00",
+    "revenue": 158000,
+    "gross_margin": 0.33
+  },
+  {
+    "order_id": "O-9006",
+    "paid_at": "2026-06-23 17:05:00",
+    "revenue": 76000,
+    "gross_margin": 0.28
+  },
+  {
+    "order_id": "O-9007",
+    "paid_at": "2026-06-24 19:30:00",
+    "revenue": 114000,
+    "gross_margin": 0.35
+  },
+  {
+    "order_id": "O-9008",
+    "paid_at": "2026-06-25 16:20:00",
+    "revenue": 176000,
+    "gross_margin": 0.37
+  }
+]
