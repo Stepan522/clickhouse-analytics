@@ -1,0 +1,52 @@
+[
+  {
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1001",
+    "warehouse": "Софьино",
+    "stock": 15,
+    "reserved": 3,
+    "price": 7090,
+    "commission_rate": 0.14,
+    "status": "active"
+  },
+  {
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1002",
+    "warehouse": "Софьино",
+    "stock": 20,
+    "reserved": 2,
+    "price": 5390,
+    "commission_rate": 0.13,
+    "status": "active"
+  },
+  {
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1003",
+    "warehouse": "Томилино",
+    "stock": 11,
+    "reserved": 2,
+    "price": 3490,
+    "commission_rate": 0.17,
+    "status": "active"
+  },
+  {
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1004",
+    "warehouse": "Томилино",
+    "stock": 14,
+    "reserved": 1,
+    "price": 2090,
+    "commission_rate": 0.13,
+    "status": "active"
+  },
+  {
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1005",
+    "warehouse": "Софьино",
+    "stock": 0,
+    "reserved": 0,
+    "price": 4590,
+    "commission_rate": 0.18,
+    "status": "out_of_stock"
+  }
+]

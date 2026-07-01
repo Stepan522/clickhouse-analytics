@@ -1,0 +1,32 @@
+[
+  {
+    "sku": "SKU-1001",
+    "product_name": "Кофеварка Compact",
+    "category": "Техника",
+    "cost_price": 4200
+  },
+  {
+    "sku": "SKU-1002",
+    "product_name": "Набор посуды 12 предметов",
+    "category": "Дом",
+    "cost_price": 3100
+  },
+  {
+    "sku": "SKU-1003",
+    "product_name": "Рюкзак городской",
+    "category": "Аксессуары",
+    "cost_price": 1700
+  },
+  {
+    "sku": "SKU-1004",
+    "product_name": "Лампа настольная",
+    "category": "Дом",
+    "cost_price": 950
+  },
+  {
+    "sku": "SKU-1005",
+    "product_name": "Фитнес-браслет",
+    "category": "Электроника",
+    "cost_price": 2200
+  }
+]

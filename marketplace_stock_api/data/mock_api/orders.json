@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2026-06-23",
+    "marketplace": "Ozon",
+    "sku": "SKU-1001",
+    "orders": 7,
+    "revenue": 48930
+  },
+  {
+    "date": "2026-06-23",
+    "marketplace": "Wildberries",
+    "sku": "SKU-1001",
+    "orders": 5,
+    "revenue": 35950
+  },
+  {
+    "date": "2026-06-23",
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1002",
+    "orders": 4,
+    "revenue": 21560
+  },
+  {
+    "date": "2026-06-24",
+    "marketplace": "Ozon",
+    "sku": "SKU-1003",
+    "orders": 3,
+    "revenue": 9870
+  },
+  {
+    "date": "2026-06-24",
+    "marketplace": "Wildberries",
+    "sku": "SKU-1005",
+    "orders": 2,
+    "revenue": 9380
+  },
+  {
+    "date": "2026-06-24",
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1004",
+    "orders": 6,
+    "revenue": 12540
+  },
+  {
+    "date": "2026-06-25",
+    "marketplace": "Ozon",
+    "sku": "SKU-1002",
+    "orders": 5,
+    "revenue": 27450
+  },
+  {
+    "date": "2026-06-25",
+    "marketplace": "Wildberries",
+    "sku": "SKU-1003",
+    "orders": 4,
+    "revenue": 13560
+  },
+  {
+    "date": "2026-06-25",
+    "marketplace": "Yandex Market",
+    "sku": "SKU-1001",
+    "orders": 3,
+    "revenue": 21270
+  },
+  {
+    "date": "2026-06-25",
+    "marketplace": "Ozon",
+    "sku": "SKU-1004",
+    "orders": 8,
+    "revenue": 15120
+  }
+]

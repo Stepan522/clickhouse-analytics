@@ -1,0 +1,27 @@
+name: marketplace-stock-api
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * *"
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r marketplace_stock_api/requirements.txt
+
+      - name: Build stock report
+        run: |
+          cd marketplace_stock_api
+          python src/pipeline.py --date-from 2026-06-23 --date-to 2026-06-25
+          python src/export_alerts_to_telegram.py

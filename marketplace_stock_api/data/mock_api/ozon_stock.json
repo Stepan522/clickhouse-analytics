@@ -1,0 +1,52 @@
+[
+  {
+    "marketplace": "Ozon",
+    "sku": "SKU-1001",
+    "warehouse": "Хоругвино",
+    "stock": 42,
+    "reserved": 6,
+    "price": 6990,
+    "commission_rate": 0.16,
+    "status": "active"
+  },
+  {
+    "marketplace": "Ozon",
+    "sku": "SKU-1002",
+    "warehouse": "Хоругвино",
+    "stock": 18,
+    "reserved": 4,
+    "price": 5490,
+    "commission_rate": 0.15,
+    "status": "active"
+  },
+  {
+    "marketplace": "Ozon",
+    "sku": "SKU-1003",
+    "warehouse": "Пушкино",
+    "stock": 9,
+    "reserved": 2,
+    "price": 3290,
+    "commission_rate": 0.18,
+    "status": "active"
+  },
+  {
+    "marketplace": "Ozon",
+    "sku": "SKU-1004",
+    "warehouse": "Пушкино",
+    "stock": 65,
+    "reserved": 7,
+    "price": 1890,
+    "commission_rate": 0.14,
+    "status": "active"
+  },
+  {
+    "marketplace": "Ozon",
+    "sku": "SKU-1005",
+    "warehouse": "Хоругвино",
+    "stock": 6,
+    "reserved": 1,
+    "price": 4490,
+    "commission_rate": 0.19,
+    "status": "active"
+  }
+]

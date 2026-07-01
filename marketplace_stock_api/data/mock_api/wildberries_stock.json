@@ -1,0 +1,52 @@
+[
+  {
+    "marketplace": "Wildberries",
+    "sku": "SKU-1001",
+    "warehouse": "Коледино",
+    "stock": 27,
+    "reserved": 5,
+    "price": 7190,
+    "commission_rate": 0.17,
+    "status": "active"
+  },
+  {
+    "marketplace": "Wildberries",
+    "sku": "SKU-1002",
+    "warehouse": "Электросталь",
+    "stock": 12,
+    "reserved": 3,
+    "price": 5590,
+    "commission_rate": 0.16,
+    "status": "active"
+  },
+  {
+    "marketplace": "Wildberries",
+    "sku": "SKU-1003",
+    "warehouse": "Коледино",
+    "stock": 4,
+    "reserved": 1,
+    "price": 3390,
+    "commission_rate": 0.2,
+    "status": "low_stock"
+  },
+  {
+    "marketplace": "Wildberries",
+    "sku": "SKU-1004",
+    "warehouse": "Электросталь",
+    "stock": 31,
+    "reserved": 4,
+    "price": 1990,
+    "commission_rate": 0.15,
+    "status": "active"
+  },
+  {
+    "marketplace": "Wildberries",
+    "sku": "SKU-1005",
+    "warehouse": "Коледино",
+    "stock": 2,
+    "reserved": 0,
+    "price": 4690,
+    "commission_rate": 0.21,
+    "status": "low_stock"
+  }
+]

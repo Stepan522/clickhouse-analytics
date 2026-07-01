@@ -1,0 +1,5 @@
+marketplace,sku,product_name,category,warehouse,stock,reserved,available_stock,price,commission_rate,commission_amount,net_price,cost_price,gross_margin_per_unit,gross_margin_rate,orders_3d,revenue_3d,daily_sales_avg,days_of_stock,status,alert
+Yandex Market,SKU-1005,Фитнес-браслет,Электроника,Софьино,0,0,0,4590,0.18,826.1999999999999,3763.8,2200,1563.8,0.3407,0,0.0,0.0,999.0,out_of_stock,out_of_stock
+Ozon,SKU-1005,Фитнес-браслет,Электроника,Хоругвино,6,1,5,4490,0.19,853.1,3636.9,2200,1436.9,0.32,0,0.0,0.0,999.0,active,reorder
+Wildberries,SKU-1003,Рюкзак городской,Аксессуары,Коледино,4,1,3,3390,0.2,678.0,2712.0,1700,1012.0,0.2985,4,13560.0,1.33,2.3,low_stock,reorder
+Wildberries,SKU-1005,Фитнес-браслет,Электроника,Коледино,2,0,2,4690,0.21,984.9,3705.1,2200,1505.1,0.3209,2,9380.0,0.67,3.0,low_stock,reorder
