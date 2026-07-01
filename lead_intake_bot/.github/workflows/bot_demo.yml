@@ -1,0 +1,24 @@
+name: lead-intake-bot-demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r lead_intake_bot/requirements.txt
+
+      - name: Build lead summary
+        run: |
+          cd lead_intake_bot
+          python src/export_summary.py

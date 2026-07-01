@@ -1,0 +1,6 @@
+service_id,service_name,base_price
+reporting,Автоматизация отчетности,45000
+dashboard,Дашборд / BI,60000
+cleanup,Очистка данных,35000
+sql,Оптимизация SQL,25000
+bot,Бот для приема заявок,50000
