@@ -1,0 +1,5 @@
+ticket_id,created_at,client_name,channel,question,detected_intent,status,need_operator
+T-2026-001,2026-06-25 09:18:22,Иван Петров,telegram,Где документы по заказу 1045?,documents,answered,0
+T-2026-002,2026-06-25 10:02:41,Анна Соколова,site_widget,Не проходит оплата по счету,payment,operator,1
+T-2026-003,2026-06-25 11:44:13,Дмитрий Орлов,telegram,Когда доставят заказ?,delivery,answered,0
+T-2026-004,2026-06-25 12:20:55,Елена Смирнова,vk,Хочу оформить возврат,refund,operator,1

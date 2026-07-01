@@ -1,0 +1,5 @@
+detected_intent,status,tickets_count,operator_share
+delivery,answered,1,0.0
+documents,answered,1,0.0
+payment,operator,1,100.0
+refund,operator,1,100.0
