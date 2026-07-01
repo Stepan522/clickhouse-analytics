@@ -1,0 +1,6 @@
+event_type,priority,status,events_count
+daily_report,normal,sent,1
+new_lead,high,sent,1
+order_status,normal,queued,1
+overdue_task,critical,sent,1
+process_check,high,sent,1

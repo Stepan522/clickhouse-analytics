@@ -1,0 +1,6 @@
+rule_id,event_type,description,priority,recipient,enabled
+new_lead,new_lead,Новые заявки с сайта или формы,high,sales_team,1
+overdue_task,overdue_task,Просрочки по задачам и SLA,critical,manager,1
+daily_report,daily_report,Готовность ежедневных отчетов,normal,team,1
+order_status,order_status,Изменение статусов заказов,normal,responsible,1
+process_check,process_check,Контроль регулярных процессов,high,ops_team,1
