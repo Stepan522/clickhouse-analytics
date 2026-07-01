@@ -1,0 +1,20 @@
+name: site-leads-api-demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r site_leads_api/requirements.txt
+      - name: Run tests
+        run: |
+          cd site_leads_api
+          pytest -q

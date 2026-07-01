@@ -1,0 +1,5 @@
+lead_id,created_at,name,phone,email,service,comment,utm_source,utm_medium,utm_campaign,page_url,status,crm_status,telegram_status,sheets_status
+L-2026-0001,2026-06-25 09:12:44,Иван Петров,+79991234567,ivan@example.com,Автоматизация отчетности,Нужен ежедневный отчет по продажам в Telegram,yandex,cpc,reports_auto,https://example.com/services/reports,new,sent,sent,sent
+L-2026-0002,2026-06-25 10:04:18,Анна Соколова,+79997654321,anna@example.com,Очистка данных,Нужно убрать дубли клиентов перед рассылкой,google,cpc,data_cleanup,https://example.com/services/data-cleanup,new,sent,sent,sent
+L-2026-0003,2026-06-25 11:37:09,Дмитрий Орлов,+79876543210,d.orlov@example.com,Оптимизация SQL,Тяжелый SQL-запрос в ClickHouse выполняется больше минуты,telegram,post,sql_optimization,https://example.com/services/sql,new,sent,sent,queued
+L-2026-0004,2026-06-25 12:20:55,Елена Смирнова,+79770001122,elena@example.com,Дашборд в BI,Нужен дашборд по продажам и рекламе,direct,none,brand,https://example.com/services/bi,new,queued,sent,sent
